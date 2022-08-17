@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Module 7 Mastery Project" />
+    <title>M7 Mastery</title>
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- <link rel="stylesheet" href="css/w3.css" /> -->
+    <style>
+      section {
+        margin-top: 50px;
+        margin-bottom: 100px;
+      }
+    </style>
+    <!-- JavaScript Link -->
+    <script src="assets/js/estimate.js" defer></script>
+  </head>
+
+  <body>
+    <!------------ Header area with site title and navigaton ------------->
+    <header>
+      <h1 class="site_title">Texas State Apparel</h1>
+      <nav class="nav_stuff">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="project3.html">Our Apparel</a></li>
+          <li><a href="#">Our Designs</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!------------ Main section of the body that has the products and check out area ------------>
+
+    <main>
+      <form id="form_check">
+        <h2 class="page_title">Our Apparel</h2>
+        <!-------------- First Product Section ------------>
+        <section class="prod_section">
+          <!----------- First Product ----------->
+          <div class="product_short">
+            <img
+              src="images/short_c.jpg"
+              alt="short sleeved tshirt"
+              width="400"
+              height="400"
+            />
+            <div class="product_txt">
+              <h3 class="product_title">Short Sleeved Tee</h3>
+              <p>
+                Our short sleeved T-shirt is great for those hot summer days.
+                <br />Made with soft and comfortable fabric, that you will want
+                <br />to wear everywhere.
+              </p>
+              <p><strong>Price:</strong> $7.00</p>
+              <!------ Amount Selector ------->
+
+              <div>
+                <label for="short_qty">Amount:</label>
+                <input
+                  type="number"
+                  id="short_qty"
+                  name="short_qty"
+                  min="0"
+                  value="0"
+                />
+              </div>
+            </div>
+          </div>
+          <!----------- Second Product ----------->
+          <div class="product_long">
+            <img
+              src="images/long_c.jpg"
+              alt="long sleeved tshirt"
+              width="400"
+              height="400"
+            />
+            <div class="product_txt">
+              <h3 class="product_title">Long Sleeved Tee</h3>
+              <p>
+                Our long sleeved T-shirt is great for those cool winter
+                nights.<br />
+                Made with thicker but comfortable fabric, our long sleeved<br />
+                T-shirt will be something you want to wear on all those cold<br />
+                winter nights.
+              </p>
+              <p><strong>Price:</strong> $10.00</p>
+
+              <div>
+                <label for="long_qty">Amount:</label>
+                <input
+                  type="number"
+                  id="long_qty"
+                  name="long_qty"
+                  min="0"
+                  value="0"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!----------- Second Product Area ------------>
+        <section class="prod_section">
+          <!------- Third Product --------->
+          <div class="product_hood">
+            <img
+              src="images/hoodie_c.jpg"
+              alt="hoodie"
+              width="400"
+              height="400"
+            />
+            <div class="product_txt">
+              <h3 class="product_title">Hoodies and Jackets</h3>
+              <p>
+                Our jackets and hoodies are made of high quality materials
+                <br />to keep you warm and comfortable in the coldest of<br />
+                enviroments.
+              </p>
+              <p><strong>Price:</strong> $25.00</p>
+
+              <div>
+                <label for="hood_qty">Amount:</label>
+                <input
+                  type="number"
+                  id="hood_qty"
+                  name="hood_qty"
+                  min="0"
+                  value="0"
+                />
+              </div>
+            </div>
+          </div>
+          <!---------- Fourth Product --------->
+          <div class="product_hat">
+            <img src="images/hat_c.jpg" alt="hat" width="400" height="400" />
+            <div class="product_txt">
+              <h3 class="product_title">Hats and Accessories</h3>
+              <p>
+                We have all kinds of accessories to match any and all styles<br />
+                that you may have! From hats, to watches, to wallets,
+                everything<br />
+                is available.
+              </p>
+              <p><strong>Price:</strong> $5.00</p>
+
+              <div>
+                <label for="hat_qty">Amount:</label>
+                <input
+                  type="number"
+                  id="hat_qty"
+                  name="hat_qty"
+                  min="0"
+                  value="0"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!------------ Area the contains the total estimater -------------->
+        <section>
+          <h2 class="page_title">Total Estimator</h2>
+          <div class="checkout">
+            <!---------- Text Boxes/Name and Email ------------>
+            <div class="form_section">
+              <h3 class="checkout_title">Name and Email:</h3>
+              <p>
+                <strong
+                  >Please enter your name and email.<br />(Required)</strong
+                >
+              </p>
+              <label for="firstName">First Name:</label><br />
+              <input type="text" id="firstName" name="firstName" /><br />
+              <label for="lastName">Last Name</label><br />
+              <input type="text" id="lastName" name="lastName" /><br />
+              <label for="email">Email Address:</label><br />
+              <input type="text" id="email" name="email" /><br />
+              <br />
+              <input type="submit" value="Order Now!" class="button_stuff" />
+              <input type="reset" class="button_stuff" />
+            </div>
+            <!------------ Radio Buttons/Shipping Type ------------>
+            <div class="form_section">
+              <h3 class="checkout_title">Shipping Method:</h3>
+              <p>
+                <strong>What is you desired shipping method?</strong>
+              </p>
+              <input
+                type="radio"
+                id="pickup"
+                name="shipping"
+                value="pickup"
+                checked
+              />
+              <label for="pickup">In store Pickup (Free)</label><br />
+              <input type="radio" id="ship" name="shipping" value="ship" />
+              <label for="ship">Standard Shipping ($5.00)</label><br />
+              <input type="radio" id="prem" name="shipping" value="premium" />
+              <label for="prem">Premium Shipping ($10.00)</label><br />
+              <input type="radio" id="air" name="shipping" value="next_day" />
+              <label for="air">Next Day Air ($15.00)</label>
+            </div>
+            <!---------- Checkboxes/Special Options -------------->
+            <div class="form_section">
+              <h3 class="checkout_title">Special Shipping Options:</h3>
+              <p>
+                <strong>Do any of these special shipping options apply?</strong>
+              </p>
+              <input type="checkbox" id="gift" name="specShip" value="Gift" />
+              <label for="gift"
+                >This order is a gift (Will be gift wrapped)</label
+              ><br />
+              <input
+                type="checkbox"
+                id="charity"
+                name="specShip"
+                value="Charity"
+              />
+              <label for="charity"
+                >This order is for a charity (Special insert in shipping)</label
+              >
+            </div>
+            <!----------- Estimated Cost Section -------------->
+            <div class="form_section">
+              <h2 class="checkout_title">Order Cost Estimate:</h2>
+              <!-- Full name -->
+              <p id="nameFinal"></p>
+              <!-- email -->
+              <p id="emailFinal"></p>
+              <!-- shipping cost -->
+              <p id="shipFinal"></p>
+              <!-- product amount -->
+              <p id="prodFinal"></p>
+              <!-- total price -->
+              <p id="priceFinal"></p>
+              <!-- spec instructions -->
+              <p id="specCheck"></p>
+              <!-- gift wrap instructions -->
+              <p id="specFinal"></p>
+              <!-- charity gift -->
+              <p id="thankYou"></p>
+            </div>
+          </div>
+        </section>
+      </form>
+    </main>
+    <footer>
+      <div>
+        <p>&copy; 2022-2023 Texas State Apparel</p>
+        <p>
+          <a href="mailto:zsatwell@mymail.tstc.edu">zsatwell@mymail.tstc.edu</a>
+        </p>
+        <p>All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

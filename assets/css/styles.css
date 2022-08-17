@@ -1,0 +1,131 @@
+body {
+  margin: 25px;
+}
+main {
+  display: grid;
+}
+header {
+  border-bottom: navy solid 2px;
+}
+/******************* Header and Text Styles ********************/
+.site_title {
+  font-family: "Alfa Slab One";
+  color: #3f51b5;
+  font-size: 64px;
+  letter-spacing: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.page_title {
+  font-family: "Alfa Slab One";
+  text-align: center;
+  color: #f44336;
+  font-size: 48px;
+  letter-spacing: 3px;
+}
+.product_title {
+  font-family: "Alfa Slab One";
+  color: #0061b1;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+.checkout_title {
+  font-family: "Alfa Slab One";
+  color: #0061b1;
+  letter-spacing: 2px;
+}
+p,
+a,
+label {
+  font-family: "Roboto";
+  font-size: 18px;
+}
+/****************** Navigation Area Styles ******************/
+
+nav ul {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.nav_stuff {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+nav li {
+  font-size: 30px;
+  padding: 10px;
+}
+a:link {
+  text-decoration: none;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+a:visited {
+  color: navy;
+}
+a:hover {
+  background-color: lightgray;
+  color: blue;
+}
+/****************** Product Area Styles *****************/
+.product_txt {
+  display: inline-block;
+  vertical-align: top;
+}
+.product_short {
+  float: left;
+  padding: 5px;
+  max-width: 50%;
+}
+.product_long {
+  float: right;
+  padding: 5px;
+  max-width: 50%;
+}
+.product_hood {
+  float: left;
+  padding: 5px;
+  max-width: 50%;
+}
+.product_hat {
+  float: right;
+  padding: 5px;
+  max-width: 50%;
+}
+/**************** Checkout Area Styles **************/
+.checkout {
+  clear: both;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  padding: 15px;
+  margin-top: 15px;
+  align-content: center;
+}
+.form_section {
+  vertical-align: top;
+  max-width: 75%;
+  padding: 10px;
+}
+
+.estimate {
+  vertical-align: top;
+}
+.form_buttons {
+  padding: 3px;
+}
+.button_stuff {
+  padding: 15px;
+  font-family: "Roboto";
+  font-size: 25px;
+}
+/*************** Footer Area ***************/
+footer {
+  background-color: #3f51b5;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
